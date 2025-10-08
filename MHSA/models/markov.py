@@ -212,10 +212,10 @@ def main(dataset, city=None):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run Markov model for location prediction.")
-    parser.add_argument('--dataset', type=str, required=True, choices=['fsq', 'geolife'],
+    parser.add_argument('--dataset_type', type=str, required=True, choices=['fsq', 'geolife'], default='fsq', 
                         help='The dataset to use (fsq or geolife)')
-    parser.add_argument('--city', type=str, choices=['tky', 'nyc'],
-                        help='The city for the Foursquare dataset (tky or nyc)')
+    parser.add_argument('--dataset_name', type=str, choices=['tky', 'nyc', 'ca'],
+                        help='The city for the Foursquare dataset (tky, ca or nyc)')
     args = parser.parse_args()
 
     main(args.dataset, args.city)
