@@ -53,6 +53,18 @@
   python models/MHSA/foursquare/main.py config/foursquare/{dataset_name}_transformer.yml
   ```
 
+# LLM-Mob
+
+- Please enter `MHSA` folder.
+
+- Please unzip data.zip.
+
+- Train LLM-Mob:
+
+  ```
+  python llm-mob.py
+  ```
+  
 # LSTPM
 
 - Please enter `LSTPM` folder.
