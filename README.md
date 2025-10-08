@@ -29,7 +29,7 @@
                   --pretrain 0
   ```
   
-# MHSA
+# MHSA, Markov
 
 - Please enter `MHSA` folder.
 
@@ -51,6 +51,12 @@
 
   ```
   python models/MHSA/foursquare/main.py config/foursquare/{dataset_name}_transformer.yml
+  ```
+  
+- Train Markov:
+
+  ```
+  python markov.py --dataset_name {dataset_name}
   ```
 
 # LLM-Mob
