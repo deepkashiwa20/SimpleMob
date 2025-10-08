@@ -55,6 +55,7 @@
 
 # LLM-Mob
 
+- This method completely follows https://github.com/Kkhhrr/LLM-Mob-Plus.
 - Please enter `MHSA` folder.
 
 - Please unzip data.zip.
