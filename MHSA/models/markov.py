@@ -148,17 +148,17 @@ def get_markov_res(train, test, n=2):
     return get_true_pred_pair(locSeq_df, test, n=n)
 
 
-def main(dataset, city=None):
+def main(dataset_type, dataset_name=None):
     n = 1
 
     script_dir = os.path.dirname(os.path.abspath(__file__))
     project_root = os.path.dirname(script_dir)
     source_root = os.path.join(project_root, "data")
     
-    if dataset == "fsq":
-        if city is None:
+    if dataset_type == "fsq":
+        if dataset_name is None:
             raise ValueError("City must be specified for the Foursquare dataset.")
-        data_path = os.path.join(source_root, "fsq", city, f"dataSet_foursquare_{city}.csv")
+        data_path = os.path.join("models", "MHSA", "foursquare", "data", f"dataSet_foursquare_{dataset_name}.csv")
         #valid_ids_path = os.path.join(source_root, "fsq", city, f"valid_ids_foursquare_{city}.pk")
     else: # geolife
         data_path = os.path.join(source_root, dataset, f"dataSet_{dataset}.csv")
@@ -218,4 +218,4 @@ if __name__ == "__main__":
                         help='The city for the Foursquare dataset (tky, ca or nyc)')
     args = parser.parse_args()
 
-    main(args.dataset, args.city)
+    main(args.dataset_type, args.dataset_name)
