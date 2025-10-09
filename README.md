@@ -29,7 +29,7 @@
                   --pretrain 0
   ```
   
-# MHSA, Markov
+# MHSA, Markov, MobTcast
 
 - Please enter `MHSA` folder.
 
@@ -59,6 +59,12 @@
   python markov.py --dataset_name {dataset_name}
   ```
 
+- Train MobTcast:
+
+  ```
+  python Mobtcast.py --dataset fsq --city {dataset_name}
+  ```
+  
 # LLM-Mob
 
 - This method completely follows https://github.com/Kkhhrr/LLM-Mob-Plus.
