@@ -31,7 +31,7 @@
   
 # MHSA, Markov, MobTcast
 
-- Please enter `MHSA` folder.
+- Please enter `LLM-Mob-Plus` folder.
 
 - Process data
   
